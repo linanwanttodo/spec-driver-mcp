@@ -1,5 +1,7 @@
 # Spec Driver MCP
 
+> [English](README.md) | [中文](README.zh-CN.md) | [Русский](README.ru.md)
+
 A Model Context Protocol server that brings Kiro-style **spec-driven development** to any AI coding tool (Claude Code, Cursor, opencode, Codex CLI, Reasonix, Gemini CLI, and more).
 
 ## What it does
