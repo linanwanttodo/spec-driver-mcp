@@ -1,0 +1,49 @@
+{
+  "name": "spec-driver-mcp",
+  "version": "0.3.0",
+  "description": "Spec-driven development MCP server - plan first, then code. Kiro-style 3-phase workflow: requirements → design → tasks.",
+  "type": "module",
+  "bin": {
+    "spec-driver-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "node -e \"const fs=require('fs');const p='dist/index.js';const c=fs.readFileSync(p,'utf-8');if(!c.startsWith('#!'))fs.writeFileSync(p,'#!/usr/bin/env node\\n'+c);fs.chmodSync(p,0o755)\"",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "spec",
+    "spec-driven-development",
+    "plan",
+    "requirements",
+    "design",
+    "tasks",
+    "kiro",
+    "cursor",
+    "claude-code",
+    "opencode",
+    "codex-cli",
+    "reasonix"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linanwanttodo/spec-driver-mcp"
+  },
+  "homepage": "https://github.com/linanwanttodo/spec-driver-mcp",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
