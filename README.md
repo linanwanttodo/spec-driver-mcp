@@ -21,13 +21,13 @@ Each phase requires **your approval** before advancing. Hooks auto-maintain cons
 ### 1. Install
 
 ```bash
-npx spec-driver-mcp
+npx github:linanwanttodo/spec-driver-mcp
 ```
 
 Or install globally:
 
 ```bash
-npm install -g spec-driver-mcp
+npm install -g github:linanwanttodo/spec-driver-mcp
 ```
 
 ### 2. Add to your AI tool
@@ -39,7 +39,7 @@ Add to `~/.config/opencode/opencode.json`:
   "mcp": {
     "spec-driver": {
       "type": "local",
-      "command": ["npx", "spec-driver-mcp"]
+      "command": ["npx", "github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -52,7 +52,7 @@ Add to `~/.claude/settings.json`:
   "mcpServers": {
     "spec-driver": {
       "command": "npx",
-      "args": ["spec-driver-mcp"]
+      "args": ["github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -67,7 +67,7 @@ Create `.cursor/mcp.json` in your project:
   "mcpServers": {
     "spec-driver": {
       "command": "npx",
-      "args": ["spec-driver-mcp"]
+      "args": ["github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -80,13 +80,13 @@ Add to `~/.codex/config.toml`:
 ```toml
 [mcp_servers.spec-driver]
 command = "npx"
-args = ["spec-driver-mcp"]
+args = ["github:linanwanttodo/spec-driver-mcp"]
 ```
 
 #### Reasonix
 Add to `~/.reasonix/config.json` `mcp` array:
 ```json
-"spec-driver=npx spec-driver-mcp"
+"spec-driver=npx github:linanwanttodo/spec-driver-mcp"
 ```
 
 #### Gemini CLI
@@ -96,7 +96,7 @@ Add to `~/.gemini/config/mcp_config.json`:
   "mcpServers": {
     "spec-driver": {
       "command": "npx",
-      "args": ["spec-driver-mcp"]
+      "args": ["github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -179,8 +179,8 @@ your-project/
 If you're asking an AI to set this up for you, copy this:
 
 ```
-Install spec-driver-mcp globally and configure it:
-1. Run: npm install -g spec-driver-mcp
+Install spec-driver-mcp from GitHub and configure it:
+1. Run: npm install -g github:linanwanttodo/spec-driver-mcp
 2. Add "spec-driver" to the MCP servers config of my AI tool
    (the config format depends on which tool I use)
 3. Done - no server needed, no API keys, no registration

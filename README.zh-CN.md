@@ -21,13 +21,13 @@ Phase 3: 任务     → tasks.md（可追踪的 [x] 复选框）
 ### 1. 安装
 
 ```bash
-npx spec-driver-mcp
+npx github:linanwanttodo/spec-driver-mcp
 ```
 
 或全局安装：
 
 ```bash
-npm install -g spec-driver-mcp
+npm install -g github:linanwanttodo/spec-driver-mcp
 ```
 
 ### 2. 添加到您的 AI 工具
@@ -39,7 +39,7 @@ npm install -g spec-driver-mcp
   "mcp": {
     "spec-driver": {
       "type": "local",
-      "command": ["npx", "spec-driver-mcp"]
+      "command": ["npx", "github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -52,7 +52,7 @@ npm install -g spec-driver-mcp
   "mcpServers": {
     "spec-driver": {
       "command": "npx",
-      "args": ["spec-driver-mcp"]
+      "args": ["github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -67,7 +67,7 @@ npm install -g spec-driver-mcp
   "mcpServers": {
     "spec-driver": {
       "command": "npx",
-      "args": ["spec-driver-mcp"]
+      "args": ["github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -80,13 +80,13 @@ npm install -g spec-driver-mcp
 ```toml
 [mcp_servers.spec-driver]
 command = "npx"
-args = ["spec-driver-mcp"]
+args = ["github:linanwanttodo/spec-driver-mcp"]
 ```
 
 #### Reasonix
 添加到 `~/.reasonix/config.json` 的 `mcp` 数组：
 ```json
-"spec-driver=npx spec-driver-mcp"
+"spec-driver=npx github:linanwanttodo/spec-driver-mcp"
 ```
 
 #### Gemini CLI
@@ -96,7 +96,7 @@ args = ["spec-driver-mcp"]
   "mcpServers": {
     "spec-driver": {
       "command": "npx",
-      "args": ["spec-driver-mcp"]
+      "args": ["github:linanwanttodo/spec-driver-mcp"]
     }
   }
 }
@@ -179,8 +179,8 @@ your-project/
 如果您让 AI 帮您安装，复制这段：
 
 ```
-Install spec-driver-mcp globally and configure it:
-1. Run: npm install -g spec-driver-mcp
+Install spec-driver-mcp from GitHub and configure it:
+1. Run: npm install -g github:linanwanttodo/spec-driver-mcp
 2. Add "spec-driver" to the MCP servers config of my AI tool
    (the config format depends on which tool I use)
 3. Done - no server needed, no API keys, no registration
